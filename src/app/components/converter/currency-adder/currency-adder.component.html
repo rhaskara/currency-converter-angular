@@ -1,0 +1,21 @@
+<div class="container">
+  <!-- Update view depending on flag -->
+  <button [hidden]="requestAdd" type="button" class="btn btn-primary text-capitalize w-100"
+   id="add-currency" (click)="requestAdd = !requestAdd">
+    <span class="lparen"></span>
+    <span class="plus"></span>
+    <span class="rparen"></span> 
+    Add More Currencies
+  </button>
+  <form (submit)="onSubmit(addSelection);" [hidden]="!requestAdd" id="add-currency-form">
+    <select #addSelection>
+      <option hidden disabled selected value></option>
+      <!-- Hide and disable selection of watched currency to prevent duplicates -->
+      <option [hidden]="currency.watching" [disabled]="currency.watching"
+        *ngFor="let currency of currencySelector; let i = index" [value]="i">
+        {{ currency.id }} - {{ currency.name }}
+      </option>
+    </select>
+    <button type="submit" class="btn btn-success text-capitalize" id="submit-btn">submit</button>
+  </form>
+</div>

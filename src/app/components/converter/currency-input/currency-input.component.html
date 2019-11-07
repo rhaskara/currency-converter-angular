@@ -1,0 +1,14 @@
+<form class="form-input w-100 p-3 border rounded">
+  <div class="form-group d-flex m-0">
+    <!-- ngModel binds to input to variable, ngModelChange detects value changes in the ngModel -->
+    <label for="userInput" class="input-label font-italic font-weight-bold">{{ defaultCurrency.id }} - {{ defaultCurrency.name }}</label>
+    <div class="input-group border rounded">
+      <div class="input-group-prepend border-right">
+        <span class="input-group-text border-0 font-weight-bold" id="currency-prepend">{{ defaultCurrency.id }}</span>
+      </div>
+      <input type="number" class="form-control border-0 text-right p-2" [(ngModel)]="userInput" aria-label="userInput"
+       name="userInput" (ngModelChange)="acceptValue()" aria-describedby="currency-prepend"
+       onfocus="this.placeholder = ''" placeholder="10.000"/>
+    </div>
+  </div>
+</form>

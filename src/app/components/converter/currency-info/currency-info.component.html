@@ -1,0 +1,15 @@
+<li class="w-100 p-2 currency-info rounded-0">
+  <div class="information mr-1">
+    <div class="calculated">
+      <div class="curr-id font-weight-bold">{{ currency.id }}</div>
+      <div class="curr-value text-right pr-2">{{ currency.value }}</div>
+    </div>
+    <div class="font-weight-bold font-italic">{{ currency.id }} - {{ currency.name }}</div>
+    <div class="font-italic pr-2">1 USD = {{ currency.id }} {{ currency.rate }}</div>
+  </div>
+  <button type="button" class="btn btn-danger" (click)="removeWatch()">
+    <span class="lparen"></span>
+    <span class="minus"></span>
+    <span class="rparen"></span>
+  </button>
+</li>

@@ -1,0 +1,15 @@
+#converter-container {
+  max-width: 360px;
+  height: auto;
+
+  #currency-info-list {
+    height: auto;
+    min-height: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+}
+
+.hide-selection {
+  display: none !important;
+}
