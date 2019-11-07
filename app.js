@@ -10,11 +10,7 @@ app.use(express.static(path.join(__dirname + 'public')));
 
 app.use(bodyParser.json());
 
-app.get('/', function (req, res) {
-  res.send('Invalid end point');
-});
-
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
