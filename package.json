@@ -2,7 +2,10 @@
   "name": "rhaskara-currency-converter",
   "version": "1.0.0",
   "description": "",
-  "main": "web.js",
+  "main": "app.js",
+  "engines": {
+    "node": "12.13.0"
+  },
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,10 +15,7 @@
   "author": "Rafferty Hutari Askara",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.13.3",
-    "express": "^4.13.3"
-  },
-  "engines": {
-    "node": "4.1.1"
+    "body-parser": "*",
+    "express": "*"
   }
 }
