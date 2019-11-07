@@ -1,0 +1,10 @@
+<div class="container my-3 mx-auto" id="converter-container">
+  <app-currency-input (userInput)="getInput($event)"></app-currency-input>
+  <h4 class="m-3 text-center">Watch List</h4>
+  <div class="container my-3 mx-auto px-1" id="currency-info-list">
+    <ng-container *ngFor="let currency of watchList">
+      <app-currency-info [currency]="currency" (eventOutput)="removeFromWatchList(currency.id)"></app-currency-info>
+    </ng-container>
+  </div>
+  <app-currency-adder [currencySelector]="rates" (setWatching)="addToWatchList($event)"></app-currency-adder>
+</div>

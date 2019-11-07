@@ -1,0 +1,27 @@
+@import 'src/assets/variables';
+
+.form-input {
+  border: 1px solid black;
+
+  .form-group {
+    flex-wrap: wrap;
+
+    .input-label {
+      flex: 0 0 100%;
+    }
+
+    .input-group {
+      .input-group-text {
+        background-color: transparent;
+      }
+  
+      input:focus {
+        box-shadow: none;
+      }
+
+      &:focus-within {
+        border-color: $primary-blue !important;
+      }
+    }
+  }
+}

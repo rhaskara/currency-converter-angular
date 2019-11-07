@@ -1,2 +1,3 @@
-# currency-converter-angular
-Currency converter application made with angular 2+
+Author: Rafferty Hutari Askara
+Description: Currency Converter Application Utilizing Angular (2+)
+Exchange Rates are fetched through latest exchange rates available through https://exchangeratesapi.io/
