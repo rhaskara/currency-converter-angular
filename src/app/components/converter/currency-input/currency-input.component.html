@@ -7,7 +7,7 @@
         <span class="input-group-text border-0 font-weight-bold" id="currency-prepend">{{ defaultCurrency.id }}</span>
       </div>
       <input type="number" class="form-control border-0 text-right p-2" [(ngModel)]="userInput" aria-label="userInput"
-       name="userInput" (ngModelChange)="acceptValue($event)" aria-describedby="currency-prepend"
+       name="userInput" (ngModelChange)="acceptValue()" aria-describedby="currency-prepend"
        onfocus="this.placeholder = ''" placeholder="10.000"/>
     </div>
   </div>

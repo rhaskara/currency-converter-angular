@@ -78,7 +78,7 @@ export class ConverterComponent implements OnInit, OnDestroy {
    * @param index {number} - numbered index of selected currency
    * @return none
    */
-  private addToWatchList(index: number): void {
+  addToWatchList(index: number): void {
     this.rates[index].watching = true;
     this.watchList.push(this.rates[index]);
   }
@@ -89,7 +89,7 @@ export class ConverterComponent implements OnInit, OnDestroy {
    * @param id {string} - ID of removed currency
    * @return none
    */
-  private removeFromWatchList(id: string): void {
+  removeFromWatchList(id: string): void {
     // Filter selected element from watchlist
     this.watchList = this.watchList.filter((element) => {
       return element.id != id

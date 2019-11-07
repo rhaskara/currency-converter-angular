@@ -8,7 +8,7 @@ import { ConverterService } from 'src/app/service/converter.service';
 })
 export class CurrencyInputComponent {
   userInput: number; // Store user input value
-  defaultCurrency: Object = {
+  defaultCurrency: any = {
     id: "USD",
     name: "United States Dollar"
   }
