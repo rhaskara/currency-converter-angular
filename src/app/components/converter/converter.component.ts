@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Currency } from 'src/app/models/currency';
-import { ConverterService } from 'src/app/service/converter.service';
+import { Currency } from '../../../app/models/currency';
+import { ConverterService } from '../../../app/service/converter.service';
 import { Subscription } from 'rxjs';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 

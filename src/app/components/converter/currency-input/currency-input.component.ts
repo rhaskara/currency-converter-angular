@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ConverterService } from 'src/app/service/converter.service';
+import { ConverterService } from '../../../../app/service/converter.service';
 
 @Component({
   selector: 'app-currency-input',
