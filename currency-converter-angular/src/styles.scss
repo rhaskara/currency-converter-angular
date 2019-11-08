@@ -25,18 +25,22 @@ input {
 }
   
 .lparen:before {
+  vertical-align: middle;
   content: '\2768';
 }
 
 .plus:before {
+  vertical-align: middle;
   content: '\FF0B';
 }
 
 .minus:before {
+  vertical-align: middle;
   content: '\FF0D';
 }
 
 .rparen:before {
+  vertical-align: middle;
   content: '\2769';
 }
 
