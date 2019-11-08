@@ -23,11 +23,6 @@ input {
 :root {
   font-size: 13.5px;
 }
-  
-.lparen:before {
-  vertical-align: middle;
-  content: '\2768';
-}
 
 .plus:before {
   vertical-align: middle;
@@ -37,11 +32,6 @@ input {
 .minus:before {
   vertical-align: middle;
   content: '\FF0D';
-}
-
-.rparen:before {
-  vertical-align: middle;
-  content: '\2769';
 }
 
 input[type='number'] {

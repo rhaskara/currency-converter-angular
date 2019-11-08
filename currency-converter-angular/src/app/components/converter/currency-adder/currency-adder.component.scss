@@ -1,6 +1,9 @@
 #add-currency {
-  word-break: breakword;
   white-space: normal;
+
+  .btn-text {
+    margin-left: 5px;
+  }
 }
 
 #add-currency-form {

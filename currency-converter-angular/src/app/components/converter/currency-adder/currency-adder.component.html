@@ -1,11 +1,9 @@
 <div class="container">
   <!-- Update view depending on flag -->
-  <button [hidden]="requestAdd" type="button" class="btn btn-primary text-capitalize w-100"
+  <button [hidden]="requestAdd" type="button" class="btn btn-primary p-2 text-capitalize w-100"
    id="add-currency" (click)="requestAdd = !requestAdd">
-    <span class="lparen"></span>
     <span class="plus"></span>
-    <span class="rparen"></span> 
-    Add More Currencies
+    <span class="btn-text">Add More Currencies</span>
   </button>
   <form (submit)="onSubmit(addSelection);" [hidden]="!requestAdd" id="add-currency-form">
     <select #addSelection>
